@@ -4,7 +4,7 @@ $formPassword = $_POST['formPassword'];
 
 require_once "connect.php";
 
-$statement = $DBH->prepare("SELECT * FROM users WHERE dbUsername=?");
+$statement = $DBH->prepare("SELECT * FROM user WHERE dbUsername=?");
 $statement->bindParam(1, $formUsername);
 $statement->execute();
 

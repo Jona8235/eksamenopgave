@@ -1,7 +1,3 @@
-<?php session_start();
-
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -34,8 +30,8 @@
 		<div class="col-md-12" >
 			<div class="col-md-12">
 			<ul class="nav navbar-nav topnav flex-row " id="myTopnav" >
-				<li class="toprow-li"><a href="#" style="color:#041b87;">Forside</a></li>
-				<li class="toprow-li"><a href="news.php" style="color:#041b87;">Nyheder </a></li>
+				<li class="toprow-li"><a href="index.php" style="color:#041b87;">Forside</a></li>
+				<li class="toprow-li"><a href="#" style="color:#041b87;">Nyheder </a></li>
 				<li class="toprow-li"><a href="#" style="color:#041b87;">Sitemap</a></li>
 				<li class="toprow-li"><a href="#" style="color:#041b87;">Print</a></li>
 				<li class="toprow-li"><a href="#" style="color:#041b87;">Kontakt</a></li>
@@ -48,7 +44,8 @@
 			</ul>
 			</div>
 		
-		</div><aside class="panel panel-default " style="margin-left:50px;" >
+		</div>
+			<aside class="panel panel-default"  id="Margin">
 		<?php 
 		if(isset($_SESSION['username']) && !empty($_SESSION['username'])){ ?>
 	<div class="loginBox col-md-2">
@@ -74,7 +71,6 @@
  }
 
  ?>
-
 			<form action="checkUser.php" method="post" >
 					<div class="form-group" style="float:right;" >
 					<label for="formUsername" >Username </label>
@@ -99,111 +95,10 @@
 
         </div>
 
+
+
         
-        
-            <div class="row">
-	<main class="col-md-9">
-	<?php 
-
-	if(isset($_SESSION['username']) && !empty($_SESSION['username']) ) 
-		
-		{?>
-
-
-	<div class="container">
-		<div class="col-md-12">
-			<form action="insert.php" method="post" class="form-horizontal">
-				<div class="form-group" >
-					<label for="heading">Tilføj en overskrift</label>
-					<input type="text" class="form-control" id="heading" name="heading" placeholder="Tilføj en overskrift her...">
-					<label for="imgAlt">Tilføj en alt tekst til dit billede</label>
-					<input type="text" class="form-control" id="imgAlt" name="imgAlt" placeholder="Tilføj en alt tekst til dit billede...">
-					<label for="articletext">Tilføj artikel text</label>
-					<textarea rows="4" cols="50" id="articletext" placeholder="Tilføj indhold..." name="articletext"></textarea>
-					<label for="myFile">Tilføj billede </label>
-					<input type="file" name="myFile" id="myFile" class="inputfile" data-multiple-caption="{count} files selected" multiple accept="image/*" />
-
-					<button type="submit" class="btn btn-default" style="float:right;">Tilføj artikel</button>
-				</div>
-
-			</form>
-		</div>
-	<?php 
-
-
-	}
-	?>
-	</main>
-</div>
-
-
-<?php 
-
-		
-		?>
-
-
-	
-
-		
-
-
-
-
-		<div class="row">
-			<main class="col-md-12">
-				<?php include "fetchDb.php"; 
-
-
-				?>
-
-
-
-
-
-
-
-			</main>
-		</div>
-		<div class="col-xs-12">
-		<article class="text-center"><img src="img/news1.jpg" alt="">
-			<h1>news1</h1>
-			<p>Lorem ipsum</p>
-
-		</article>
-
-		<div class="col-xs-12">
-		<article class="text-center"><img src="img/news2.jpg" alt="">
-			<h1>news2</h1>
-			<p>Lorem ipsum</p>
-
-		</article>
-
-		<div class="col-xs-12 ">
-		<article class="text-center"><img src="img/news3.jpg" alt="">
-			<h1>news3</h1>
-			<p>Lorem ipsum</p>
-
-		</article>
-
-		<div class="col-xs-12">
-		<article class="text-center"><img src="img/news4.jpg" alt="">
-			<h1>news4</h1>
-			<p>Lorem ipsum</p>
-
-		</article>
-
-		
-</div>
-
-
-
-	
-			
-
-		
-	
-			<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 		<script>

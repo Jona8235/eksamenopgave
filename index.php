@@ -165,36 +165,41 @@
 
 			</main>
 		</div>
-		<div class="col-xs-12">
-		<article class="text-center"><img src="img/news1.jpg" alt="">
+		<div class="col-md-12">
+		<article class="text-center"><img id="responsive-img" src="img/news1.jpg" alt="hest1">
 			<h1>news1</h1>
-			<p>Lorem ipsum</p>
-
+			<p class="text-center ">Lorem ipsum</p>
+		</div>
 		</article>
 
-		<div class="col-xs-12">
-		<article class="text-center"><img src="img/news2.jpg" alt="">
+		<div class="col-md-12">
+
+		<article class="text-center" ><img id="responsive-img" src="img/news2.jpg" alt="hest2">
 			<h1>news2</h1>
-			<p>Lorem ipsum</p>
-
+			<p class="text-center " >Lorem ipsum</p>
+</div>
 		</article>
 
-		<div class="col-xs-12 ">
-		<article class="text-center"><img src="img/news3.jpg" alt="">
+		<div class="col-md-12 ">
+		<article class="text-center"><img id="responsive-img" src="img/news3.jpg" alt="hest3">
 			<h1>news3</h1>
-			<p>Lorem ipsum</p>
-
+			<p class="text-center ">Lorem ipsum</p>
+		</div>
 		</article>
-
-		<div class="col-xs-12">
-		<article class="text-center"><img src="img/news4.jpg" alt="">
+	
+		<div class="col-md-12">
+		<article class="text-center"><img id="responsive-img" src="img/news4.jpg" alt="hest4">
 			<h1>news4</h1>
-			<p>Lorem ipsum</p>
+			<p> Lorem ipsum</p>
 
 		</article>
 
 		
 </div>
+
+
+
+
 
 
 
